@@ -1,0 +1,41 @@
+<section class="h-screen w-full flex flex-col gap-10 p-10">
+	<h2 class="md:text-3xl text-md font-extrabold">¿Quienes somos?</h2>
+	<p
+		class="fontroboto dark:text-white text-black md:text-md text-sm lg:text-lg w-full"
+	>
+		Somos una asociación dedicada a la enseñanza y práctica del Taekwon-Do, con
+		un fuerte compromiso hacia la excelencia y la formación de personas
+		íntegras. Nuestra organización está compuesta por instructores altamente
+		calificados y apasionados, que cuentan con años de experiencia tanto en la
+		práctica como en la enseñanza del Taekwon-Do. Trabajamos incansablemente
+		para crear un ambiente inclusivo y de apoyo, donde cada miembro se sienta
+		valorado y motivado para alcanzar su máximo potencial.
+	</p>
+	<div class="flex items-center gap-4">
+		<img class="w-20 h-28" src="./luando.webp" alt="" />
+		<img class="size-20" src="./chon-ji.jpeg" alt="" />
+		<img class="size-20" src="./won-hyo.jpeg" alt="" />
+		<img class="w-24 h-20" src="./hwa-rang.jpeg" alt="" />
+	</div>
+</section>
+
+<style>
+	h2 {
+		background: linear-gradient(to right, #a02c59 0%, #c83873 6%, #3d51aa 15%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	h2::after {
+		content: "";
+		position: absolute;
+		bottom: -25px;
+		left: 5px;
+		width: 10%;
+		height: 3px;
+		background: rgb(255, 120, 70);
+	}
+</style>

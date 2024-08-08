@@ -19,7 +19,7 @@ export function ChangeTheme() {
 	return (
 		<>
 			<button
-				class="p-2 dark:hover:bg-[rgba(255,255,255,0.1)] rounded-lg hover:bg-[rgba(0,0,0,0.3)]"
+				class="p-2 hover:bg-[rgba(255,255,255,0.1)] rounded-lg dark:text-white text-white outline-none border-none"
 				onClick={() => (theme == "dark" ? changeTheme("light") : changeTheme("dark"))}
 			>
 				{theme == "dark" ? <Moon class="w-6" /> : <Sun class="w-6 h-6 text-black" />}

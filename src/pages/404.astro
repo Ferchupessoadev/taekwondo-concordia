@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="404 - Asociación de Taekwon-Do.">
+	<Header />
+	<section class="flex justify-center items-center w-full h-screen m-0 p-0">
+		<div
+			class="flex justify-center items-center bg-[rgba(0,0,0,0.2)] rounded-md w-[95vw] p-4"
+		>
+			<img class="w-48" src="/favicon.png" alt="" />
+			<div class="flex flex-col items-center justify-center p-4 gap-4">
+				<div class="flex">
+					<h1 class="translate-y-9 translate-x-6 text-9xl fontroboto">404</h1>
+					<img class="w-48" src="/404.png" alt="" />
+				</div>
+				<span>¡Ups! Página no encontrada </span>
+				<p class="fontroboto flex flex-col">
+					<span>
+						Pero no te preocupes, incluso los campeones enfrentan desafíos.
+					</span>
+					<span class="italic">
+						"La perseverancia es mi secreto. Si te caes, levántate y sigue
+						adelante." — Hwang Kwang-lee
+					</span>
+				</p>
+			</div>
+		</div>
+	</section>
+	<Footer />
+</Layout>

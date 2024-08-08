@@ -4,7 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
-const description = "Unión Escuelas de Taekwon-Do concordia Entre Rios.";
+const description = "Unión de Escuelas de Taekwon-Do Concordia Entre Rios.";
 ---
 
 <!doctype html>
@@ -17,7 +17,7 @@ const description = "Unión Escuelas de Taekwon-Do concordia Entre Rios.";
 		<title>{title}</title>
 	</head>
 	<body
-		class="dark:bg-[#13151a] dark:text-[#ffffff] bg-[#ffffff] text-[#13151a]"
+		class="dark:bg-[#13151a] dark:text-[#ffffff] bg-[#eeeeee] text-[#13151a]"
 	>
 		<slot />
 	</body>
@@ -37,6 +37,14 @@ const description = "Unión Escuelas de Taekwon-Do concordia Entre Rios.";
 		--bg-blue: #3653b9;
 		--bg-yellow: #fde000;
 		--fg-color: #ffffff;
+	}
+	/* load the font */
+	@font-face {
+		font-family: "Roboto";
+		src: url("/fonts/Roboto/roboto-regular-webfont.woff") format("woff");
+		src: url("/fonts/Roboto/roboto-regular-webfont.woff2") format("woff2");
+		font-weight: normal;
+		font-style: normal;
 	}
 	body {
 		font-family: system-ui, sans-serif;

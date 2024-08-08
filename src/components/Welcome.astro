@@ -1,9 +1,58 @@
-<section class="h-screen w-full flex items-center justify-center">
-	<div class="flex flex-col justify-center items-center h-full w-full">
-		<img
-			class="size-48"
-			src="/favicon.png"
-			alt="Unión Escuelas de Taekwon-Do."
-		/>
+<section class="flex justify-center items-center h-screen">
+	<div class="w-full h-full bg-[rgba(0,0,0,0.3)] absolute"></div>
+	<div
+		class="flex items-center gap-4 bg-[rgba(0,0,0,0.2)] md:mt-0 md:mx-16
+	rounded-lg p-4 md:flex-row flex-col justify-center md:justify-start w-full
+	md:w-auto backdrop-blur h-full md:h-auto top-24 md:top-0"
+	>
+		<img src="/favicon.png" class="h-auto md:h-80 md:w-auto w-32" />
+		<p
+			class="fontroboto dark:text-white text-white md:text-md text-sm lg:text-lg"
+		>
+			En la Asociación de Concordia de Taekwon-Do, creemos que las artes
+			marciales no son solo una disciplina física, sino una filosofía de vida
+			que promueve el desarrollo integral del individuo. Nuestra misión es
+			difundir los principios del Taekwon-Do, fomentando valores como el
+			respeto, la integridad, la perseverancia, el autocontrol y el espíritu
+			indomable.
+		</p>
 	</div>
 </section>
+
+<style>
+	section {
+		animation: banner 15s ease-in-out infinite alternate;
+	}
+
+	@keyframes banner {
+		0% {
+			background: url(/banner/1.jpg) no-repeat center center/cover;
+			background-attachment: fixed;
+		}
+
+		25% {
+			background: url(/banner/1.jpg) no-repeat center center/cover;
+			background-attachment: fixed;
+		}
+
+		50% {
+			background: url(/banner/2.jpg) no-repeat center center/cover;
+			background-attachment: fixed;
+		}
+
+		75% {
+			background: url(/banner/2.jpg) no-repeat center center/cover;
+			background-attachment: fixed;
+		}
+
+		90% {
+			background: url(/banner/3.jpg) no-repeat center center/cover;
+			background-attachment: fixed;
+		}
+
+		100% {
+			background: url(/banner/3.jpg) no-repeat center center/cover;
+			background-attachment: fixed;
+		}
+	}
+</style>

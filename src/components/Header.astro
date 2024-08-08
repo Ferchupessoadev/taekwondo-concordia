@@ -3,19 +3,27 @@ import { ChangeTheme } from "../components/ChangeTheme.jsx";
 ---
 
 <header
-	class="bg-transparent h-screen flex items-center justify-center relative w-full top-0"
+	class="bg-[rgba(0,0,0,0.2)] h-16 flex items-center justify-center fixed w-full top-0 z-10"
 >
-	<nav class="absolute top-5 flex justify-between w-full items-center pl-4">
-		<h1 class="text-sm md:text-lg">Unión Escuelas de Taekwon-Do</h1>
+	<div class="flex justify-between w-full items-center px-4">
+		<h1
+			class="dark:text-white text-black text-sm md:text-lg fontroboto font-bold"
+		>
+			Asociación de Taekwon-Do.
+		</h1>
 		<ChangeTheme client:load />
-	</nav>
-	<div
-		class="flex items-center gap-4 bg-[rgba(0,0,0,0.2)] rounded-lg p-4 md:flex-row flex-col justify-center md:justify-start"
-	>
-		<img src="/favicon.png" class="h-80 w-auto" />
-		<p class="">
-			Estamos en proceso de creación. <br />
-			En breve nos estaremos uniendo.
-		</p>
 	</div>
 </header>
+
+<script>
+	addEventListener("DOMContentLoaded", () => {
+		addEventListener("scroll", () => {
+			const header = document.querySelector("header");
+			if (window.scrollY > 0) {
+				header.classList.add("bg-[rgba(0,0,0,0.2)]");
+			} else {
+				header.classList.remove("bg-[rgba(0,0,0,0.2)]");
+			}
+		});
+	});
+</script>
